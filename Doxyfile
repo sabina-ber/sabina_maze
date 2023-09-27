@@ -1,0 +1,73 @@
+# Doxyfile
+
+# Устанавливает корневую директорию проекта
+PROJECT_NAME = "Maze"
+
+# Устанавливает тип исходного кода (C, C++, Java и т. д.)
+INPUT =  ./model/mainwindow.h
+         ./model/mainwindow.cc
+         ./manual/manual.md
+INPUT += ./model/maze.h
+         ./model/maze.cc
+INPUT += ./model/mazegenerator.h
+         ./model/mazegenerator.cc
+INPUT += ./model/mazemodel.h
+         ./model/mazemodel.cc
+INPUT += ./view/mazewidget.h
+         ./view/mazewidget.cc
+        
+
+# Устанавливает фильтры для файлов исходного кода
+FILE_PATTERNS = *.cc *.md *.h
+
+# Устанавливает директорию, в которой будет сгенерирована документация
+OUTPUT_DIRECTORY = ./docs
+
+# Устанавливает формат документации (HTML, LaTeX и т. д.)
+GENERATE_HTML = YES
+GENERATE_LATEX = NO
+
+# Устанавливает список расширений файлов, для которых будет сгенерирована документация
+EXTENSION_MAPPING = cc=C++
+EXTENSION_MAPPING = cc=C++
+
+# Устанавливает список директив препроцессора, которые будут игнорироваться
+PREDEFINED = DOXYGEN_IGNORE_THIS
+
+# Устанавливает список директив препроцессора, которые будут включены в документацию
+ENABLE_PREPROCESSING = YES
+MACRO_EXPANSION = YES
+
+# Устанавливает список директорий, которые будут рекурсивно исследованы Doxygen
+RECURSIVE = YES
+
+# Указываем, что нужно генерировать документацию для всех сущностей (классы, методы, функции, перечисления и т. д.)
+EXTRACT_ALL = YES
+
+# Указываем, что нужно генерировать документацию для приватных членов классов
+EXTRACT_PRIVATE = YES
+
+# Указываем, что нужно генерировать документацию для статических членов классов
+EXTRACT_STATIC = YES
+
+# Указываем, что нужно генерировать документацию для вложенных классов
+INLINE_INHERITED_MEMB = YES
+
+# Включите генерацию Markdown
+GENERATE_MARKDOWN = YES
+
+# Укажите файлы Markdown для обработки
+INPUT += ./manual/manual.md
+
+# Укажите директивы препроцессора для DoxyMD
+ENABLE_DOXYMD = ENABLE_DOXYMD
+
+EXCLUDE_PATTERNS = *_test.cc
+EXCLUDE = */gtest/*
+
+# Устанавливает параметры форматирования и стиля документации
+JAVADOC_AUTOBRIEF = YES
+QT_AUTOBRIEF = YES
+
+# Извлечь все
+EXTRACT_ALL = YES
