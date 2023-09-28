@@ -24,13 +24,12 @@ The Maze project is a comprehensive maze solving and generation toolkit. Designe
 
 After building, you can run the project using:
 
-\`\`\`bash
-$ make run
-\`\`\`
+`$ make run`
+
 
 ## How to Use
 
 1. **Load Maze**: To load a maze from a file, press `Load` button and select your file.
 2. **Generate Maze**: To generate a new maze, press `Generate` button .
-3. **Solve Maze**: To solve the maze, press "Find Path" button and then select the start and end points in the maze grid. Then press "Show the way button".
+3. **Solve Maze**: To solve the maze, press `Find Path` button and then select the start and end points in the maze grid. Then press `Show the way` button.
 4. **Save Maze**: To save the maze to a file, press `Save Maze` button .
