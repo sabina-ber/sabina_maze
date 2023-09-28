@@ -20,14 +20,6 @@ The Maze project is a comprehensive maze solving and generation toolkit. Designe
 - Qt 5.x
 - CMake (Optional)
 
-### Building the Project
-
-\`\`\`bash
-$ git clone https://github.com/yourusername/sabina_maze.git
-$ cd sabina_maze
-$ make
-\`\`\`
-
 ### Running
 
 After building, you can run the project using:
@@ -42,11 +34,3 @@ $ make run
 2. **Generate Maze**: To generate a new maze, go to \`Actions > Generate\`.
 3. **Solve Maze**: To solve the maze, select the start and end points in the maze grid.
 4. **Save Maze**: To save the maze to a file, go to \`File > Save\`.
-
-## Documentation
-
-For more details on the inner workings of the code, please refer to the inline comments and separate documentation files.
-
-## Contributing
-
-Contributions are welcome! Please read the contributing guidelines first.
